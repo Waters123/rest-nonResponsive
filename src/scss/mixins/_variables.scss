@@ -1,0 +1,5 @@
+$container-width: 180rem;
+
+@include respond(tab-land){
+    $container-width: 20rem;
+};

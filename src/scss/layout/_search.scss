@@ -1,0 +1,112 @@
+body{
+    background-color:hsl(207, 26%, 17%) ;
+}
+
+.main{
+   
+    position: relative;
+    
+   
+
+}
+
+.Search-filter{
+    margin: 0 auto;
+    width: $container-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  @media (max-width:1523px ){
+
+    width: 140rem;
+    flex-direction: column;
+  }
+
+}
+
+.search{
+    padding:5rem 0px 0rem 0rem;
+    position: relative;
+    &__field{
+        padding: 1.5rem;
+        padding-left:5rem ;
+        width: 40rem;
+        background-color:hsl(209, 23%, 22%);
+        border: none;
+        color: #ffffff;
+        border-radius: 0.3rem;
+        -webkit-box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+        
+
+
+
+        
+    }
+
+    &__icon{
+      position: absolute;
+      left: 2rem;
+      top: 68%;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+    }
+
+    &__btn{
+      border: none;
+      
+    }
+}
+
+
+
+.dropdown-filter{
+    color: #ffffff;
+}
+
+//dropdown menu
+
+.dropbtn {
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+     width: 12.4rem;
+     height: 4rem;
+    
+    border: none;
+    border-radius: 0.3rem;
+  }
+  
+  .dropdown {
+    width: 10rem;
+    padding:5rem 0px 0rem 0rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: hsl(209, 23%, 22%);
+    min-width: 12.4rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0.3rem;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color:hsl(209, 30%, 10%)}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color:hsl(209, 30%, 10%)}
